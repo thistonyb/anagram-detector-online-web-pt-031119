@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(word_list)
-    word_list.select do |word|
+    word_list.filter do |word|
       an_anagram?(word)
     end
   end
