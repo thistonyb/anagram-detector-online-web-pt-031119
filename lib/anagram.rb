@@ -6,8 +6,8 @@ class Anagram
     @new_anagram = word
   end
 
-  def match(words)
-    words.select do |word|
+  def match(word_list)
+    word_list.select do |word|
       an_anagram?(word)
     end
   end
